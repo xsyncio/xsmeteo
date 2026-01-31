@@ -21,9 +21,6 @@ from xsmeteo.models import (
     AirQualityResponse,
     BaseStruct,
     ClimateResponse,
-    CurrentData,
-    DailyData,
-    DailyUnits,
     ElevationResponse,
     EnsembleResponse,
     FloodResponse,
@@ -31,8 +28,6 @@ from xsmeteo.models import (
     GeocodingResponse,
     GeocodingResult,
     HistoricalResponse,
-    HourlyData,
-    HourlyUnits,
     MarineResponse,
     PrecipitationUnit,
     TemperatureUnit,
@@ -40,7 +35,7 @@ from xsmeteo.models import (
     WindSpeedUnit,
 )
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "DEFAULT_RATE_LIMITS",
@@ -50,10 +45,6 @@ __all__ = [
     "AsyncXSMeteo",
     "BaseStruct",
     "ClimateResponse",
-    "CurrentData",
-    "DailyData",
-    "DailyUnits",
-    "DecodeError",
     "ElevationResponse",
     "EnsembleResponse",
     "FloodResponse",
@@ -62,8 +53,6 @@ __all__ = [
     "GeocodingResult",
     "HTTPError",
     "HistoricalResponse",
-    "HourlyData",
-    "HourlyUnits",
     "MarineResponse",
     "PrecipitationUnit",
     "RateLimitConfig",

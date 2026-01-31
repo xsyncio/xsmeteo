@@ -43,6 +43,9 @@ with XSMeteo() as client:
         timezone="auto",
     )
     print(forecast)
+    # Access data using dictionary syntax:
+    if forecast.hourly:
+        print(forecast.hourly["temperature_2m"])
 ```
 
 ### Asynchronous Usage
@@ -59,6 +62,8 @@ async def main():
             hourly=["temperature_2m"],
         )
         print(forecast)
+        if forecast.hourly:
+            print(forecast.hourly["temperature_2m"])
 
 asyncio.run(main())
 ```

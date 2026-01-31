@@ -1,6 +1,6 @@
 [project]
 name = "xsmeteo"
-version = "0.1.0"
+version = "0.1.1"
 description = "High-performance, strictly typed Python wrapper for Open-Meteo API"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -62,4 +62,5 @@ dev = [
     "ruff>=0.2.0",
     "types-requests",
     "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
 ]

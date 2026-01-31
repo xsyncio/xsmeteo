@@ -13,12 +13,7 @@ from xsmeteo.models.elevation import ElevationResponse
 from xsmeteo.models.ensemble import EnsembleResponse
 from xsmeteo.models.flood import FloodResponse
 from xsmeteo.models.forecast import (
-    CurrentData,
-    DailyData,
-    DailyUnits,
     ForecastResponse,
-    HourlyData,
-    HourlyUnits,
 )
 from xsmeteo.models.geocoding import GeocodingResponse, GeocodingResult
 from xsmeteo.models.historical import HistoricalResponse
@@ -28,9 +23,7 @@ __all__ = [
     "AirQualityResponse",
     "BaseStruct",
     "ClimateResponse",
-    "CurrentData",
-    "DailyData",
-    "DailyUnits",
+    "ClimateResponse",
     "ElevationResponse",
     "EnsembleResponse",
     "FloodResponse",
@@ -38,8 +31,6 @@ __all__ = [
     "GeocodingResponse",
     "GeocodingResult",
     "HistoricalResponse",
-    "HourlyData",
-    "HourlyUnits",
     "MarineResponse",
     "PrecipitationUnit",
     "TemperatureUnit",

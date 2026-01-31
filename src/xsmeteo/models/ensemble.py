@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+
 from xsmeteo.models.base import BaseStruct
 
 
@@ -13,3 +14,5 @@ class EnsembleResponse(BaseStruct, forbid_unknown_fields=False):
     timezone: str
     timezone_abbreviation: str
     elevation: float
+    hourly_units: dict[str, str] | None = None
+    hourly: dict[str, list[float | int | str | None]] | None = None

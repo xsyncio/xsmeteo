@@ -23,6 +23,6 @@ def type_check(session: nox.Session) -> None:
 @nox.session
 def tests(session: nox.Session) -> None:
     """Run tests."""
-    session.install("pytest", "pytest-asyncio", "httpx", "msgspec")
-    session.install(".")
-    session.run("pytest", "tests")
+    session.install("pytest", "pytest-asyncio", "pytest-cov", "httpx", "msgspec")
+    session.install("-e", ".")
+    session.run("pytest", "--cov=src/xsmeteo", "--cov-report=term-missing", "tests")
