@@ -26,6 +26,14 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install nox
+
+      - name: Run verification (lint, types, tests)
+        run: nox
+
       - name: Build release distributions
         run: |
           # NOTE: put your own distribution build steps here.
