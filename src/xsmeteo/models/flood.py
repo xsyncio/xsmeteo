@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 from xsmeteo.models.base import BaseStruct
 
 

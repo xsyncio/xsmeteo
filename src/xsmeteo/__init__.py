@@ -45,6 +45,7 @@ __all__ = [
     "AsyncXSMeteo",
     "BaseStruct",
     "ClimateResponse",
+    "DecodeError",
     "ElevationResponse",
     "EnsembleResponse",
     "FloodResponse",

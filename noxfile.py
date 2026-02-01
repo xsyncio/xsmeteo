@@ -9,8 +9,9 @@ nox.options.sessions = ["lint", "type_check", "tests"]
 def lint(session: nox.Session) -> None:
     """Run linting checks."""
     session.install("ruff")
+    session.run("ruff", "format", "src")
+    session.run("ruff", "check", "src", "--fix", "--unsafe-fixes")
     session.run("ruff", "check", "src")
-    session.run("ruff", "format", "--check", "src")
 
 
 @nox.session
